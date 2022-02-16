@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TESTE HABILIDADE</title>
+
+</head>
+<body>
+	<div id="load"></div>
+
+	<style>
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			background: #f0ffff;
+		}
+
+		#load{
+			width: 60px;
+			height: 60px;
+
+			border: rgb(0, 0, 0, 0.18) solid;
+			border-left-color:darkred;
+			border-radius: 50%;
+
+			animation: loading 1.2s linear infinite;
+		}	
+
+		@keyframes loading{
+			to {transform: rotate(360deg);}
+		}
+	</style>
+</body>
+<footer>
+	<img src="aqui.jpg" class="imagemRoda">
+	<p class="copyright">Copyright - Industrias Imaginarias.LPD </p>
+</footer>
+</html>

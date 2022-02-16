@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Matrix</title>
+</head>
+<body>
+	<style>
+		body{
+			margin: 0;
+			height: 100vh;
+			widows: 100vw;
+			overflow: hidden;
+		}
+	</style>
+	<canvas width="500" height="200" id="canv"></canvas>
+	<script>
+		//const
+		const canvas = document.getElementById('canv');
+		const ctx = canvas.getContext('2d');
+		const w = canvas.width = document.body.offsetWidth;
+		const h = canvas.height = document.body.offsetHeight;
+		const cols = Math.floor(w/20)+1;
+		const yPos = Array(cols).fill(0);
+
+			//ctx
+			ctx.fillStyle = "#000";
+			ctx.fillRect(0,0,w,h);
+
+			//function++
+			function DesenhoMatrix(){
+				ctx.fillStyle = '#0001';
+				ctx.fillRect(0,0,w,h);
+
+				ctx.fillStyle = 'red';
+				ctx.font='15pt monospace';
+
+				yPos.forEach((y, ind) => {
+					const text = String.fromCharCode(Math.random() *128);
+					const x = ind * 20;
+					ctx.fillText(text,x,y);
+
+					if(y > 100 + Math.random() * 10000) yPos[ind]=0;
+					else yPos[ind]= y + 20;
+				});
+		}
+		setInterval(DesenhoMatrix, 50);
+		</script>
+<p>Lucas seu seus ps aos meus adjaui </p>
+<h2 class="manchete"> Somos uma startup de consultoria e implantação. </h2>
+<p> Trabalhos com o que ha de mais moderno, em critpo moedas e invertimentos em renda variaveis nas mais diversa bolsa de valores do mundo de Shangaí a B3.</p>
+<p>Implatamos sua rede o melhor em blochain para que sua transações seja feita com paciência e segurança, nosso VPN usa um inovovador sistema de analise por I.A.</
+</body>
+</html>

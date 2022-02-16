@@ -1,0 +1,53 @@
+body {
+	background-image: url(C:/Users/lucas/Downloads/PREI/bitcoin.jpg);
+}
+
+.matrix{
+	font-size: 10px;
+	opacity: 30%;
+}
+div{
+	color: orange;
+}
+
+.titulo{
+	background: greenyellow;
+	font-size: 20px;
+	text-align: center;
+}
+
+.aqui {
+	background: greenyellow;
+
+}
+
+nav li {
+	position:relative;
+	display: inline-table;
+	margin: 10px;
+	font-size: 20px;
+}
+p {
+	font-size: 30px;
+	text-align: center;
+	color: orange;
+}
+
+h2{
+	text-align: center;
+	color: greenyellow;
+	font-size: 45px;
+}
+
+.imagemRoda {
+	text-align: left;
+}
+
+.copyright {
+	text-align: center;
+	background: greenyellow;
+}
+
+.desenhoMatrix{
+	color: orange;
+}
